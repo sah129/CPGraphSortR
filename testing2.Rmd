@@ -1,0 +1,32 @@
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(dplyr)
+library(stringr)
+source('generate_output.R')
+```
+
+```{r}
+object_file = "sample input/Spreadsheets/SpotAssayQuant_EditedObjects.csv"
+image_file = "sample input/Spreadsheets/SpotAssayQuant_Image.csv"
+```
+
+```{r}
+res <- generate_csv(object_file,image_file)
+res
+```
+
+
+
+
+
+
+
+
+
+

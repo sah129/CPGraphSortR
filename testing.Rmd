@@ -1,0 +1,17 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library("reticulate")
+reticulate::use_python(python = ' C:/Python38/Scrips', required = T)
+sys <- import("sys")
+sys$version
+```
+
+```{python}
+scipy <- import("scipy")
+```
+
